@@ -9,7 +9,8 @@ namespace ProjectEuler.Problem1
 
         public MultiplesFinder(params int[] multiplesToFind)
         {
-            _multiplesToFind = multiplesToFind.ToList();
+            _multiplesToFind = multiplesToFind == null ?
+                new List<int>() : multiplesToFind.ToList();
         }
 
         public List<int> FindForLessThan(int value)

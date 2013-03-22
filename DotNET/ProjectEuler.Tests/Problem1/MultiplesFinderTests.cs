@@ -8,6 +8,14 @@ namespace ProjectEuler.Tests.Problem1
     public class MultiplesFinderTests
     {
         [Test]
+        public void Ctor_EmptyArray_Returns_EmptyList()
+        {
+            var finder = new MultiplesFinder(null);
+            var results = finder.FindForLessThan(0);
+            Assert.AreEqual(0, results.Count);
+        }
+
+        [Test]
         public void MultiplesOf_5LessThan10_Returns5()
         {
             var finder = new MultiplesFinder(5);
@@ -55,6 +63,14 @@ namespace ProjectEuler.Tests.Problem1
 
             Console.Write(results.Sum());
             // Returns: 233168
+        }
+
+        [Test]
+        public void MultiplesOf_0orLessThan0_Returns_EmptyList()
+        {
+            var finder = new MultiplesFinder(0, 0);
+            var results = finder.FindForLessThan(0);
+            Assert.AreEqual(0, results.Count);
         }
     }
 }
