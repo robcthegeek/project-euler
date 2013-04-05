@@ -10,7 +10,7 @@ namespace ProjectEuler.Tests.Problem2
         [Test]
         public void FindLargest_600851475143_ReturnsTHEANSWER()
         {
-            var primes = new TrialDivisionPrimeFinder();
+            var primes = new OddsOnlyPrimeFinder();
             var factors = new PrimeFactorFinder(primes);
             var result = factors.FindLargest(600851475143);
             Console.Write(result);

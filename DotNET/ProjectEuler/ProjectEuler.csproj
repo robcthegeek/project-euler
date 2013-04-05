@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Problem1\MultiplesFinder.cs" />
+    <Compile Include="Problem2\IPrimeNumberFinder.cs" />
+    <Compile Include="Problem2\OddsOnlyPrimeFinder.cs" />
     <Compile Include="Problem2\PrimeFactorFinder.cs" />
     <Compile Include="Problem2\TrialDivisionPrimeFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -3,15 +3,9 @@ using System.Collections.Generic;
 
 namespace ProjectEuler.Problem2
 {
-    public interface IPrimeNumberFinder
-    {
-        List<long> Find(long start, long end);
-        bool IsPrime(long n);
-    }
-
     public class TrialDivisionPrimeFinder : IPrimeNumberFinder
     {
-        public bool IsPrime(long n)
+        public virtual bool IsPrime(long n)
         {
             if (n < 2)
                 return false;
@@ -28,7 +22,7 @@ namespace ProjectEuler.Problem2
             return true;
         }
 
-        public List<long> Find(long start, long end)
+        public virtual List<long> Find(long start, long end)
         {
             if (start > end)
                 throw new ArgumentOutOfRangeException("end", "End Parameter Must Be Greater Than Start");
