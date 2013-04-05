@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -44,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Problem1\MultiplesFinderTests.cs" />
+    <Compile Include="Problem2\FindTheAnswer.cs" />
+    <Compile Include="Problem2\PrimeFactorFinderFactorTests.cs" />
+    <Compile Include="Problem2\TrialDivisionPrimeFinderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
