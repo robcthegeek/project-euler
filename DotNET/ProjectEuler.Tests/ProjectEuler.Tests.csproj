@@ -52,6 +52,8 @@
     <Compile Include="Problem2\TrialDivisionPrimeFinderTests.cs" />
     <Compile Include="Problem4\Answer.cs" />
     <Compile Include="Problem4\IntExtensionsTests.cs" />
+    <Compile Include="Problem5\Answer.cs" />
+    <Compile Include="Problem5\IntExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
