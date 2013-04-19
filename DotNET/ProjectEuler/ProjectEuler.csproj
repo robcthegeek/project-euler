@@ -45,6 +45,7 @@
     <Compile Include="Problem2\OddsOnlyPrimeFinder.cs" />
     <Compile Include="Problem2\PrimeFactorFinder.cs" />
     <Compile Include="Problem2\TrialDivisionPrimeFinder.cs" />
+    <Compile Include="Problem4\IntExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
